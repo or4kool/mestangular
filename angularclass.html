@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-guide-concepts-1-production</title>
+  
+
+  <script src="http://code.angularjs.org/snapshot/angular.min.js"></script>
+  
+
+  
+</head>
+<body >
+  <div ng-app ng-init="firstname,lastname,biy,gender">
+  
+  <div>
+    First Name <input type="text" name="" ng-model="firstname" />
+  </div>
+  <div>
+    Last Name <input type="text" name="" ng-model="lastname" />
+  </div>
+  <div>
+    Birth Year <input type="number" name="" ng-model="biy" />
+  </div>
+  <div>
+    Gender: <select name="" ng-model="gender">
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+  </div>
+  <div ng-if="firstname">
+    Hello my name is <b>{{firstname + " " + lastname}}</b>, I am <b>{{ biy>0 ? 2018-biy : ""}}</b> and i'm <b>{{gender}}</b>
+  </div>
+</div>
+</body>
+</html>
